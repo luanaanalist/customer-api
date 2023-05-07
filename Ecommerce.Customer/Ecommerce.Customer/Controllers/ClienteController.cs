@@ -5,7 +5,7 @@ using Service.Interfaces;
 
 namespace Ecommerce.Customer.Controllers
 {
-    [ApiController]
+    //[ApiController]
     [Route("api/[controller]")]
     public class ClienteController : Controller
     {
@@ -25,15 +25,15 @@ namespace Ecommerce.Customer.Controllers
 
         }
 
-        //[AllowAnonymous]
-        //[HttpGet]
-        //public ActionResult Loging(string email, string senha)
-        //{
+        [AllowAnonymous]
+        [HttpPost]
+        public ActionResult Loging([FromBody] User user)
+        {
 
-        //    var response = _clienteService.ValidaCliente(email, senha);
-        //    return Ok(response);
+            var response = _clienteService.ValidaUsuario(user.Email, user.Senha);
+            return Ok(response);
 
 
-        //}
+        }
     }
 }

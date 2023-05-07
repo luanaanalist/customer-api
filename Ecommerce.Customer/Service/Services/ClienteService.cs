@@ -31,16 +31,17 @@ namespace Service.Services
             return clienteVM;
         }
 
-        public User ValidaUsuario(string email, string senha)
+        public string ValidaUsuario(string email, string senha)
         {
+            string token = null;
             var user = _clienteRepository.ValidaCliente(email, senha);
             if (user.Email != null) 
             {
-                var token = _tokenService.CreateToken(user);
+                token = _tokenService.CreateToken(user);
 
             }
 
-            return user;
+            return token;
         }
     }
 }
