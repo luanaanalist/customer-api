@@ -31,6 +31,7 @@ namespace Infraestrutura
         private static void ConfigureService(IServiceCollection services)
         {
             services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<ITokenService, TokenService>();
 
         }
     }

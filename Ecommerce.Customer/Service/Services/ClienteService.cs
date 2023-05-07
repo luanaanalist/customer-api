@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Domain.Entities;
 using Domain.Repository;
 using Service.Interfaces;
 using Service.ViewModel;
@@ -14,11 +15,13 @@ namespace Service.Services
     {
         private readonly IClienteRepository _clienteRepository;
         private readonly IMapper _mapper;
+        private readonly  ITokenService _tokenService;
 
-        public ClienteService(IClienteRepository clienteRepository, IMapper mapper)
+        public ClienteService(IClienteRepository clienteRepository, IMapper mapper, ITokenService tokenService)
         {
             _clienteRepository = clienteRepository;
             _mapper = mapper;
+            _tokenService = tokenService;
         }
 
         public IEnumerable<ClienteVM> GetAll()
@@ -26,6 +29,18 @@ namespace Service.Services
             var cliente = _clienteRepository.GetAll();
             var clienteVM = _mapper.Map<IEnumerable<ClienteVM>>(cliente);
             return clienteVM;
+        }
+
+        public User ValidaUsuario(string email, string senha)
+        {
+            var user = _clienteRepository.ValidaCliente(email, senha);
+            if (user.Email != null) 
+            {
+                var token = _tokenService.CreateToken(user);
+
+            }
+
+            return user;
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Repository.Context
         {
 
         }
-        public virtual DbSet<Domain.Entities.Cliente> Pedido { get; set; }
-        public virtual DbSet<Domain.Entities.Endereco> Categoria { get; set; }
+        public virtual DbSet<Domain.Entities.Cliente> Cliente { get; set; }
+        public virtual DbSet<Domain.Entities.Endereco> Endereco { get; set; }
     }
 }

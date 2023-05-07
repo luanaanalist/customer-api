@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces;
 
 namespace Ecommerce.Customer.Controllers
@@ -22,5 +24,16 @@ namespace Ecommerce.Customer.Controllers
             return Ok(response);
 
         }
+
+        //[AllowAnonymous]
+        //[HttpGet]
+        //public ActionResult Loging(string email, string senha)
+        //{
+
+        //    var response = _clienteService.ValidaCliente(email, senha);
+        //    return Ok(response);
+
+
+        //}
     }
 }

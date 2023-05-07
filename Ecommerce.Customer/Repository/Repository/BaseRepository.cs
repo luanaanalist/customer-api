@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Repository.Repository
 {
-    public abstract class BaseRepositoryy<T> : TransactionRepository where T : BaseEntity
+    public abstract class BaseRepository<T> : TransactionRepository where T : BaseEntity
     {
-        protected BaseRepositoryy(AppDbContext appDbContext) : base(appDbContext)
+        protected BaseRepository(AppDbContext appDbContext) : base(appDbContext)
         {
         }
         public virtual async Task<T> Create(T value)

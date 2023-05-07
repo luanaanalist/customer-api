@@ -92,7 +92,12 @@ C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Infraestrutura.pdb
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Repository.pdb
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Service.pdb
-C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\obj\Debug\net6.0\Ecommerce.Customer.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\AutoMapper.dll
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

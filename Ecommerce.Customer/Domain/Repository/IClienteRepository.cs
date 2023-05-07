@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.DTO;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Domain.Repository
 {
     public interface IClienteRepository: ICommonRepository<Cliente>
     {
-
+        public User ValidaCliente(string email, string senha);
     }
 }
