@@ -30,6 +30,8 @@ builder.Services.AddSingleton(Configuration);
 AppConfiguration.ConfigureApp(builder.Services, Configuration); // Mapeamento de interface de servico e Repositorio
 builder.Services.AddAutoMapper(typeof(AutoMapperConfig)); // incluir p/ auto Mapper de DTO para View Model
 
+builder.Services.AddDistributedMemoryCache(); // incluir por um erro
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

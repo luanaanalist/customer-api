@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "c6qVLHMUvCrCfeP5kdB6/WvwUgnrV2ig3A/LMaS2BYd7ShhOuf5LCzbPPNnGo9SkGZan6J5U9DwhKuyCg3r9ZQ==",
+  "dgSpecHash": "7DrJkC4z83l8nyMALweQ/fmBZ4Rdwbu5OfN2h1kMPF+av/rNfOf8GgcxZkvQyVP1e0YrHYPaXb3+kpeslXqoRA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafae\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\enums.net\\4.0.0\\enums.net.4.0.0.nupkg.sha512",

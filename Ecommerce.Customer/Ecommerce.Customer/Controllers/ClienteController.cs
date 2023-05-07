@@ -15,12 +15,12 @@ namespace Ecommerce.Customer.Controllers
         }
 
 
-        //[HttpGet]
-        //public IActionResult GetAll()
-        //{
-        //    var response = this._clienteService.GetAll();
-        //    return Ok(response);
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var response = this._clienteService.GetAll();
+            return Ok(response);
 
-        //}
+        }
     }
 }
