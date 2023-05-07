@@ -93,3 +93,4 @@ C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Infraestrutura.pdb
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Repository.pdb
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\bin\Debug\net6.0\Service.pdb
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\obj\Debug\net6.0\Ecommerce.Customer.MvcApplicationPartsAssemblyInfo.cs

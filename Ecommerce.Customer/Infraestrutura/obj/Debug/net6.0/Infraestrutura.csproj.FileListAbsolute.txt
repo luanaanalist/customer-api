@@ -10,3 +10,10 @@ C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\obj\Debu
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\obj\Debug\net6.0\refint\Infraestrutura.dll
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\obj\Debug\net6.0\Infraestrutura.pdb
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\obj\Debug\net6.0\ref\Infraestrutura.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\bin\Debug\net6.0\Domain.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\bin\Debug\net6.0\Repository.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\bin\Debug\net6.0\Service.dll
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\bin\Debug\net6.0\Domain.pdb
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\bin\Debug\net6.0\Repository.pdb
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\bin\Debug\net6.0\Service.pdb
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Infraestrutura\obj\Debug\net6.0\Infraestrutura.csproj.CopyComplete

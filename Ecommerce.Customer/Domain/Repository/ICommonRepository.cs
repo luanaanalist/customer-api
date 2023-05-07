@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Domain.Repository
 {
-    public interface ICommonRepository
+    public interface ICommonRepository<T>: ITransactionRepository where T : class
     {
         Task<T> Create(T value);
         Task<IList<T>> CreateBatch(IList<T> value); //criar lote
