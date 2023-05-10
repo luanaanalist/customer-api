@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj": {}
+    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj": {
+    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

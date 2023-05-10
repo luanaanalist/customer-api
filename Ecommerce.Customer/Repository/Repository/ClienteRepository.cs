@@ -25,5 +25,14 @@ namespace Repository.Repository
             return user;
 
         }
+
+        public bool CustomerExist(string cpf, string email) 
+        {
+            var customerExist =  _context.Cliente.Where(c => c.Email == email || c.Cpf == cpf).FirstOrDefault();
+            if(customerExist != null)
+                return true;
+
+            return false;
+        }
     }
 }

@@ -32,7 +32,6 @@ namespace Infraestrutura
         {
             services.AddScoped<IClienteService, ClienteService>();
             services.AddScoped<ITokenService, TokenService>();
-
         }
     }
 }

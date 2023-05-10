@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces;
+using Service.ViewModel;
 
 namespace Ecommerce.Customer.Controllers
 {
@@ -25,15 +26,16 @@ namespace Ecommerce.Customer.Controllers
 
         }
 
-        [AllowAnonymous]
         [HttpPost]
-        public ActionResult Loging([FromBody] User user)
+        [Route("Created/{senha}")]
+        public IActionResult Created([FromBody] Cliente cliente, [FromRoute] string senha)
         {
-
-            var response = _clienteService.ValidaUsuario(user.Email, user.Senha);
+            var response = this._clienteService.Created(cliente, senha);
             return Ok(response);
 
-
         }
+
+
+
     }
 }

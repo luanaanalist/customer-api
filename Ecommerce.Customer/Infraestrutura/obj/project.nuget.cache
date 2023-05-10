@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DnTmNofFjyd9SdaEomKRWX9gwSHuf/BwYpshzuOGtQ8FPL7Rf4YHgIS2WO8zWOBjFzVit+3d4ddqO0XPo53tVg==",
+  "dgSpecHash": "nRZDkVIyXTzddFG3PN6e68qOXJ0Jtuc3RVs+2JsyVTq8efZ9deMuybNnXmGdniyOpUCm9s5AkB3smlaw5G1g/A==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj",
+  "projectFilePath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafae\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

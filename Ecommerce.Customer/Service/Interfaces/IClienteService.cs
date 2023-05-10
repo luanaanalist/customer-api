@@ -11,7 +11,12 @@ namespace Service.Interfaces
     public interface IClienteService
     {
         IEnumerable<ClienteVM> GetAll();
-        String ValidaUsuario(string email, string senha);
+        bool ValidacaodeSenha(string senhaCliente, string senhaValidacao);
+        bool validaEmail(string email);
+
+        ClienteVM Created(Cliente cliente, string senha);
+
+
     }
         
 }
