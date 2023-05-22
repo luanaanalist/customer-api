@@ -21,6 +21,10 @@ namespace Domain.Entities
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = new NetworkCredential("luanaanalist@gmail.com", "ewxjoizhprqzwuof");
 
+
+               
+
+
                 mailMessage.From = new MailAddress("renatacometti2@gmail.com", "Olá, Seja bem vindo ao nosso Ecommerce");
                 mailMessage.IsBodyHtml = true;
 

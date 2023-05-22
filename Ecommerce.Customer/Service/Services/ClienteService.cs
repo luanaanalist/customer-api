@@ -63,10 +63,10 @@ namespace Service.Services
                 return clienteVM;
                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                //_clienteRepository.RollbackTransaction();
-                throw;
+                _clienteRepository.RollbackTransaction();
+                throw new Exception(ex.Message);
             }
 
         }
