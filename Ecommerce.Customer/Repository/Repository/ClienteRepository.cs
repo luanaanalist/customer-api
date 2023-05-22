@@ -85,6 +85,7 @@ namespace Repository.Repository
 
                 email.BodyEncoding = System.Text.Encoding.GetEncoding("iso-8859-1");
                 email.Body = strMail;
+                
             }
             try
             {
