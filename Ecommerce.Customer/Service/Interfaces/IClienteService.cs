@@ -13,7 +13,6 @@ namespace Service.Interfaces
         IEnumerable<ClienteVM> GetAll();
         bool ValidacaodeSenha(string senhaCliente, string senhaValidacao);
         bool validaEmail(string email);
-
         ClienteVM Created(Cliente cliente, string senha);
 
 

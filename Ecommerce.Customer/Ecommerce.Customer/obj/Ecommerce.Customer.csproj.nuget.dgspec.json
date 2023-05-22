@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj": {}
+    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj": {
+    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj": {
+    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj",
+        "projectUniqueName": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj",
         "projectName": "Ecommerce.Customer",
-        "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj",
+        "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Ecommerce.Customer\\Ecommerce.Customer.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Ecommerce.Customer\\obj\\",
+        "outputPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Ecommerce.Customer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -118,17 +118,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj"
               },
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj"
               },
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj"
               },
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\Service.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\Service.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\Service.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\Service.csproj"
               }
             }
           }
@@ -186,14 +186,14 @@
         }
       }
     },
-    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj": {
+    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj",
+        "projectUniqueName": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj",
         "projectName": "Infraestrutura",
-        "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj",
+        "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Infraestrutura\\Infraestrutura.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Infraestrutura\\obj\\",
+        "outputPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Infraestrutura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -213,14 +213,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj"
               },
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj"
               },
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\Service.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\Service.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\Service.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\Service.csproj"
               }
             }
           }
@@ -271,14 +271,14 @@
         }
       }
     },
-    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj": {
+    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\obj\\",
+        "outputPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -298,8 +298,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj"
               }
             }
           }
@@ -358,14 +358,14 @@
         }
       }
     },
-    "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\Service.csproj": {
+    "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\Service.csproj",
+        "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Service\\obj\\",
+        "outputPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -385,11 +385,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Domain\\Domain.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Domain\\Domain.csproj"
               },
-              "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Projetos\\Ecommerce.Renata\\Ecommerce.Customer\\Repository\\Repository.csproj"
+              "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Projetos\\luanaanalist\\customer-api\\Ecommerce.Customer\\Repository\\Repository.csproj"
               }
             }
           }

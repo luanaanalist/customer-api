@@ -20,6 +20,7 @@ namespace Repository.Repository
             if (value != null)
             {
                 value.Create_Date = DateTime.Now;
+                value.Update_Date = DateTime.Now;
                 var responseAdd = await _context.Set<T>().AddAsync(value);
 
                 await _context.SaveChangesAsync();

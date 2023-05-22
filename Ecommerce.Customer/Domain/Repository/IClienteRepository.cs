@@ -10,8 +10,12 @@ namespace Domain.Repository
 {
     public interface IClienteRepository: ICommonRepository<Cliente>
     {
-        public User ValidaCliente(string email, string senha);
+       User ValidaCliente(string email, string senha);
 
-        public bool CustomerExist(string cpf, string email);
+       bool CustomerExist(string cpf, string email);
+
+        //void Incluir(Cliente cliente);
+
+        void EnviarEmail(Cliente cliente);
     }
 }

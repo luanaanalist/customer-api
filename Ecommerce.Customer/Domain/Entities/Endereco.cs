@@ -46,7 +46,7 @@ namespace Domain.Entities
         public int Id_Cliente { get; set; }
 
         [ForeignKey("Id_Cliente")]
-        public Cliente Cliente { get; set; }
+        public virtual Cliente Cliente { get; set; }
      
 
     }

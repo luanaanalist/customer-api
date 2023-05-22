@@ -53,9 +53,11 @@ namespace Service.Services
 
 
                 _clienteRepository.Create(cliente);
-                SendEmail.Send(cliente.Email); // enviar email para usuario dando boas vindas
-                _clienteRepository.CommitTransaction();
+                _clienteRepository.EnviarEmail(cliente);
 
+                //_clienteRepository.Incluir(cliente);
+
+                //SendEmail.Send(cliente) ; // enviar email para usuario dando boas vindas
 
                 var clienteVM = _mapper.Map<ClienteVM>(cliente);
                 return clienteVM;
@@ -63,7 +65,7 @@ namespace Service.Services
             }
             catch (Exception)
             {
-                _clienteRepository.RollbackTransaction();
+                //_clienteRepository.RollbackTransaction();
                 throw;
             }
 
@@ -90,7 +92,7 @@ namespace Service.Services
                 return false;
 
             //verifica se existe algum caracter especial q nao seja letras(maiúscula ou minúscula) e numeros
-            if (Regex.IsMatch(senhaCliente, (@"[^a-zA-Z0-9]")))
+            if (!Regex.IsMatch(senhaCliente, (@"[^a-zA-Z0-9]")))
                 return false;
           
 

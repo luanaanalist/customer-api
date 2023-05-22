@@ -27,6 +27,6 @@ Update_Date datetime NOT NULL)
 ALTER TABLE Endereco  WITH CHECK ADD CONSTRAINT FK_Endereco_Cliente FOREIGN KEY(Id_Cliente)
 REFERENCES Cliente (id)
 Go
-GO
 
-GO
+insert into [dbo].[Cliente](Nome, Cpf, Data_Nascimento, Telefone, Email, Senha, Ativo, Create_date, Update_Date) 
+values('Renata Cometti', '09820056799', '23/03/1984', '27999971902', 'renatacometti2@gmail.com', '19098119', 'Sim', GETDATE(), Getdate())

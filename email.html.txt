@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, tr, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<p>Seja bem vindo ao Ecommerce #Nome</p>
+<p>Segue abaixo os dados de acesso que você cadastrou:</p>
+
+
+<table>
+  <tr>
+    <th>Login</th>
+    <td>{}</td>
+  </tr>
+  <tr>
+    <th>Senha</th>
+    <td>{}</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+

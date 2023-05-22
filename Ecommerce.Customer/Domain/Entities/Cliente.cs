@@ -45,7 +45,7 @@ namespace Domain.Entities
         [MaxLength(50)]
         public string Ativo { get; set; }   
 
-        public ICollection<Endereco> Enderecos { get; set; }
+        public virtual ICollection<Endereco> Enderecos { get; set; }
 
 
     }
