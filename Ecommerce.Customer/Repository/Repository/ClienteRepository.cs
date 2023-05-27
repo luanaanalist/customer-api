@@ -1,16 +1,11 @@
-﻿using Domain.DTO;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Domain.Repository;
 using Microsoft.Extensions.Configuration;
 using Repository.Context;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Repository.Repository
 {

@@ -8,7 +8,7 @@ namespace Ecommerce.Customer.Controllers
 {
     //[ApiController]
     [Route("api/[controller]")]
-    public class ClienteController : Controller
+    public class ClienteController : BaseController
     {
         private readonly IClienteService _clienteService;
 
@@ -21,21 +21,54 @@ namespace Ecommerce.Customer.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var response = this._clienteService.GetAll();
-            return Ok(response);
+            try
+            {
+                var response = this._clienteService.GetAll();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+
+                return TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar recuperar os clientes", ex);
+            }
+            
 
         }
 
+        //[HttpPost]
+        //[Route("Created/{senha}")]
+        //public IActionResult Created([FromBody] Cliente cliente, [FromRoute] string senha)
+        //{
+        //    try
+        //    {
+
+        //        var response = this._clienteService.Created(cliente, senha);
+        //        return Ok(response);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar cadastrar um cliente.", ex);
+        //    }
+
+
+        //}
         [HttpPost]
         [Route("Created/{senha}")]
-        public IActionResult Created([FromBody] Cliente cliente, [FromRoute] string senha)
+        public async Task<IActionResult> Created([FromBody] Cliente cliente, [FromRoute] string senha)
         {
-            var response = this._clienteService.Created(cliente, senha);
-            return Ok(response);
+            try
+            {
+                if (!await this._clienteService.Created(cliente, senha))
+                    return Conflict(this._clienteService.RetornaErros());
+
+                    return Ok();
+            }
+            catch (Exception ex)
+            {
+                return TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar cadastrar um cliente.", ex);
+            }
 
         }
-
-
 
     }
 }
