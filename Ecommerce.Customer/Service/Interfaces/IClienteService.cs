@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.DTO;
+using Domain.Entities;
 using Service.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -13,11 +14,11 @@ namespace Service.Interfaces
         IEnumerable<ClienteVM> GetAll();
         bool ValidacaodeSenha(string senhaCliente, string senhaValidacao);
         bool validaEmail(string email);
-        //ClienteVM Created(Cliente cliente, string senha);
-
         Task<bool> Created(Cliente cliente, string senha);
-
+        Task<bool> Update(ClienteDTO cliente);
         string RetornaErros();
+        ClienteVM GetById(int id);
+        Task<bool> Delete(int id);
 
     }
         

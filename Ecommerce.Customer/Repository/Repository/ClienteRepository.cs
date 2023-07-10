@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.Repository;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Repository.Context;
 using System.Globalization;
@@ -17,7 +18,7 @@ namespace Repository.Repository
             _configuration = configuration;
         }
 
-        public User ValidaCliente(string email, string senha) 
+        public User ValidaCliente(string email, string senha)
         {
 
             var user = _context.Cliente.Where(c => c.Email == email && c.Senha == senha)
@@ -27,10 +28,10 @@ namespace Repository.Repository
 
         }
 
-        public bool CustomerExist(string cpf, string email) 
+        public bool CustomerExist(string cpf, string email)
         {
-            var customerExist =  _context.Cliente.Where(c => c.Email == email || c.Cpf == cpf).FirstOrDefault();
-            if(customerExist != null)
+            var customerExist = _context.Cliente.Where(c => c.Email == email || c.Cpf == cpf).FirstOrDefault();
+            if (customerExist != null)
                 return true;
 
             return false;
@@ -38,15 +39,8 @@ namespace Repository.Repository
 
 
 
-        //public void Incluir(Cliente cliente)
-        //{
-        //      cliente.Update_Date = DateTime.Now;
-        //      cliente.Create_Date = DateTime.Now;
-        //      _context.Cliente.Add(cliente);
-        //       bool teste = _context.SaveChanges() > 0;
-        //}
 
-        public void EnviarEmail(Cliente cliente) 
+        public void EnviarEmail(Cliente cliente)
         {
 
 
@@ -58,7 +52,7 @@ namespace Repository.Repository
             client.EnableSsl = bool.Parse(_configuration["Email:EnableSsl"]);
             client.UseDefaultCredentials = false;
             client.Credentials = new NetworkCredential(_configuration["Email:SenderEmail"], _configuration["Email:SenderPassword"]);
-         
+
 
             MailAddress de = new MailAddress(_configuration["Email:SenderEmail"]);
             string emailpara = cliente.Email;
@@ -80,7 +74,7 @@ namespace Repository.Repository
 
                 email.BodyEncoding = System.Text.Encoding.GetEncoding("iso-8859-1");
                 email.Body = strMail;
-                
+
             }
             try
             {
@@ -88,7 +82,7 @@ namespace Repository.Repository
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message + client.Port + client.Host +  _configuration["Email:SenderEmail"] + _configuration["Email:SenderPassword"]);
+                throw new Exception(ex.Message + client.Port + client.Host + _configuration["Email:SenderEmail"] + _configuration["Email:SenderPassword"]);
             }
 
 
@@ -133,6 +127,21 @@ namespace Repository.Repository
             //    throw new Exception(ex.Message);
             //}
         }
+
+        public Cliente BuscarClienteESeusRelacionamentos(int idCliente)
+        {
+
+
+            var cliente =  _context.Cliente.AsNoTracking()
+                   .Include(p => p.Enderecos)
+                    .Where(c => c.Id == idCliente)
+                                 .SingleOrDefault();
+
+            return cliente;
+
+
+        }
+
 
     }
 }

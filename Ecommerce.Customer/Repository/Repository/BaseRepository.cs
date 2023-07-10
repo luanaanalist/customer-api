@@ -40,15 +40,15 @@ namespace Repository.Repository
             if (value != null)
             {
                 foreach (var item in value)
-            {
-                item.Create_Date = DateTime.Now;
-                var responseAdd = await _context.Set<T>().AddAsync(item);
-                response.Add(responseAdd.Entity);
-            }
+                {
+                    item.Create_Date = DateTime.Now;
+                    var responseAdd = await _context.Set<T>().AddAsync(item);
+                    response.Add(responseAdd.Entity);
+                }
 
                 await _context.SaveChangesAsync();
             }
-        
+
 
             return response;
         }
@@ -58,9 +58,9 @@ namespace Repository.Repository
             if (values != null)
             {
                 _context.Set<T>().UpdateRange(values);
-            await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
             }
-         
+
         }
 
         public virtual async Task<T> Update(T value)
@@ -75,7 +75,7 @@ namespace Repository.Repository
 
                 response = responseUpdate.Entity;
             }
-       
+
 
             return response;
         }
@@ -91,7 +91,7 @@ namespace Repository.Repository
 
                 await _context.SaveChangesAsync();
             }
-          
+
         }
 
         public virtual async Task Delete(T entiy)
@@ -114,7 +114,7 @@ namespace Repository.Repository
 
         public IList<T> GetByFunc(Func<T, bool> filter)
         {
-         
+
 
             return _context.Set<T>().Where(filter).ToList();
         }

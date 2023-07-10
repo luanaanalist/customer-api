@@ -14,8 +14,8 @@ namespace Domain.Repository
 
        bool CustomerExist(string cpf, string email);
 
-        //void Incluir(Cliente cliente);
+       void EnviarEmail(Cliente cliente);
 
-        void EnviarEmail(Cliente cliente);
+       Cliente BuscarClienteESeusRelacionamentos(int idCliente);
     }
 }

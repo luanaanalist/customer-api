@@ -207,3 +207,4 @@ C:\Projetos\Ecommerce.Renata\Ecommerce.Customer\Ecommerce.Customer\obj\Debug\net
 C:\Projetos\Ecommerce.Renata\Ecommerce.Customer\Ecommerce.Customer\obj\Debug\net6.0\ref\Ecommerce.Customer.dll
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\obj\Debug\net6.0\Ecommerce.Customer.RazorAssemblyInfo.cache
 C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\obj\Debug\net6.0\Ecommerce.Customer.RazorAssemblyInfo.cs
+C:\Projetos\luanaanalist\customer-api\Ecommerce.Customer\Ecommerce.Customer\obj\Debug\net6.0\Ecommerce.Customer.MvcApplicationPartsAssemblyInfo.cs

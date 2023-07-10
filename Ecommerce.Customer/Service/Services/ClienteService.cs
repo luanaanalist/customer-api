@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Domain.DTO;
 using Domain.Entities;
 using Domain.Repository;
 using Service.Interfaces;
@@ -30,49 +31,73 @@ namespace Service.Services
           
         }
 
+        public ClienteVM GetById(int id) 
+        {
+            var cliente = _clienteRepository.GetById(id);
+            var clienteVM = _mapper.Map<ClienteVM>(cliente);
+            return clienteVM;
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            var cliente = _clienteRepository.BuscarClienteESeusRelacionamentos(id);
+            if (cliente == null) 
+            {
+                ErrosValidacao = "Cliente não encontrado";
+                return false;
+            }
+            else
+            {
+                await this._clienteRepository.Delete(cliente);
+                return true;
+
+            }
+   
+
+        }
+
         public IEnumerable<ClienteVM> GetAll()
         {
             var cliente = _clienteRepository.GetAll();
+
             var clienteVM = _mapper.Map<IEnumerable<ClienteVM>>(cliente);
             return clienteVM;
         }
 
-        //public ClienteVM Created(Cliente cliente, string senha)
-        //{
-        //    try
-        //    {
-        //        if (cliente == null)
-        //            throw new Exception("");
 
-        //        var validarUsuario = _clienteRepository.CustomerExist(cliente.Cpf, cliente.Email);
-        //        if (validarUsuario)
-        //            throw new Exception("Usuario já cadastrado");
+        public async Task<bool> Update(ClienteDTO cliente)
+        {
 
-        //        if (!ValidacaodeSenha(cliente.Senha, senha))
-        //            throw new Exception("Senha invalida");
-
-        //        if (!validaEmail(cliente.Email))
-        //            throw new Exception("Email Invalido");
+            try
+            {
+                if (cliente.Id == 0)
+                {
+                    ErrosValidacao = "por favor informe um cliente para ser Alterado";
+                    return false;
+                }
 
 
-        //         var clienteRetorno = _clienteRepository.Create(cliente);
-        //        _clienteRepository.EnviarEmail(cliente);
+                if (!validaEmail(cliente.Email))
+                    return false;
 
-        //        //_clienteRepository.Incluir(cliente);
+                var clienteRetornado = _clienteRepository.BuscarClienteESeusRelacionamentos(cliente.Id);
 
-        //        //SendEmail.Send(cliente) ; // enviar email para usuario dando boas vindas
+                // eu posso pegar o cliente que vem da controler... e ja chamar o metodo passando o objeto _clienteRepository.Update(Cliente)
 
-        //        var clienteVM = _mapper.Map<ClienteVM>(clienteRetorno);
-        //        return clienteVM;
+                // ou eu busco o clienteRetornado e seto as propriedade de Cliente DTO no cliente retornado? Como vou saber qual endereco o cliente vai querer trocar?
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //         _clienteRepository.RollbackTransaction();
-        //        throw new Exception(ex.Message);
-        //    }
 
-        //}
+
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                _clienteRepository.RollbackTransaction();
+                throw new Exception(ex.Message);
+            }
+
+        }
         public async Task<bool> Created(Cliente cliente, string senha)
         {
 
