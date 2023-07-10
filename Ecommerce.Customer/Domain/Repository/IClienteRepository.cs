@@ -17,5 +17,8 @@ namespace Domain.Repository
        void EnviarEmail(Cliente cliente);
 
        Cliente BuscarClienteESeusRelacionamentos(int idCliente);
+
+        void Alterar(Cliente cliente);
+        Task<bool> SaveAllAsync();
     }
 }

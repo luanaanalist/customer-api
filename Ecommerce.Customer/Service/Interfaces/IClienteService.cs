@@ -15,7 +15,7 @@ namespace Service.Interfaces
         bool ValidacaodeSenha(string senhaCliente, string senhaValidacao);
         bool validaEmail(string email);
         Task<bool> Created(Cliente cliente, string senha);
-        Task<bool> Update(ClienteDTO cliente);
+        Task<bool> Update(Cliente cliente);
         string RetornaErros();
         ClienteVM GetById(int id);
         Task<bool> Delete(int id);

@@ -65,7 +65,7 @@ namespace Service.Services
         }
 
 
-        public async Task<bool> Update(ClienteDTO cliente)
+        public async Task<bool> Update(Cliente cliente)
         {
 
             try
@@ -75,18 +75,13 @@ namespace Service.Services
                     ErrosValidacao = "por favor informe um cliente para ser Alterado";
                     return false;
                 }
-
-
                 if (!validaEmail(cliente.Email))
                     return false;
 
-                var clienteRetornado = _clienteRepository.BuscarClienteESeusRelacionamentos(cliente.Id);
+                this._clienteRepository.Alterar(cliente);
 
-                // eu posso pegar o cliente que vem da controler... e ja chamar o metodo passando o objeto _clienteRepository.Update(Cliente)
-
-                // ou eu busco o clienteRetornado e seto as propriedade de Cliente DTO no cliente retornado? Como vou saber qual endereco o cliente vai querer trocar?
-
-
+                if (!await _clienteRepository.SaveAllAsync())
+                    return false;
 
                 return true;
 

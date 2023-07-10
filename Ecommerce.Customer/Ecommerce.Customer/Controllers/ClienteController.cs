@@ -95,12 +95,12 @@ namespace Ecommerce.Customer.Controllers
 
         }
 
-        [HttpPut("{idCliente}")]
-        public async Task<IActionResult> Update([FromBody] ClienteDTO cliente)
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] Cliente cliente)
         {
             try
             {
-                if (!await this._clienteService.Update(cliente);
+                if (!await this._clienteService.Update(cliente))
                     return Conflict(this._clienteService.RetornaErros());
                 else
                     return Ok();

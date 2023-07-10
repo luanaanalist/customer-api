@@ -69,6 +69,7 @@ namespace Repository.Repository
 
             if (value != null)
             {
+               
                 var responseUpdate = _context.Set<T>().Update(value);
 
                 await _context.SaveChangesAsync();
@@ -76,10 +77,23 @@ namespace Repository.Repository
                 response = responseUpdate.Entity;
             }
 
-
             return response;
         }
 
+        // teste de um UPdate 2 que inclui
+        public virtual async Task Update2(T value)
+        {
+            T? response = default(T);
+
+            if (value != null)
+            {
+                _context.Set<T>().Entry(value).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+
+                await _context.SaveChangesAsync();
+
+            }
+
+        }
 
         public virtual async Task Delete(int id)
         {

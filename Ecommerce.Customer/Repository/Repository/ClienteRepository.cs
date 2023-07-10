@@ -37,12 +37,8 @@ namespace Repository.Repository
             return false;
         }
 
-
-
-
         public void EnviarEmail(Cliente cliente)
         {
-
 
             CultureInfo cult = new CultureInfo("pt-BR");
 
@@ -85,11 +81,6 @@ namespace Repository.Repository
                 throw new Exception(ex.Message + client.Port + client.Host + _configuration["Email:SenderEmail"] + _configuration["Email:SenderPassword"]);
             }
 
-
-
-
-
-
             //CultureInfo cult = new CultureInfo("pt-BR");
             //MailMessage mailMessage = new MailMessage();
             //var smtpClient = new SmtpClient("smtp.gmail.com", 587);
@@ -131,17 +122,72 @@ namespace Repository.Repository
         public Cliente BuscarClienteESeusRelacionamentos(int idCliente)
         {
 
-
             var cliente =  _context.Cliente.AsNoTracking()
                    .Include(p => p.Enderecos)
                     .Where(c => c.Id == idCliente)
                                  .SingleOrDefault();
 
             return cliente;
+        }
 
+        public void Alterar(Cliente cliente)
+        {
+            var buscaClienteERelacionamento= _context.Cliente
+             .Where(p => p.Id == cliente.Id)
+             .Include(p => p.Enderecos)
+            .SingleOrDefault();
+
+            if (buscaClienteERelacionamento != null) 
+            {
+                cliente.Update_Date = DateTime.Now;
+                _context.Entry(buscaClienteERelacionamento).CurrentValues.SetValues(cliente);
+            }
+
+
+            foreach (var enderecoModel in cliente.Enderecos)
+            {
+                var existeEndereco = buscaClienteERelacionamento.Enderecos
+                    .Where(c => c.Id == enderecoModel.Id && c.Id != default(int))
+                    .SingleOrDefault();
+
+                if (existeEndereco != null)
+                {
+                    enderecoModel.Update_Date = DateTime.Now;
+                    _context.Entry(existeEndereco).CurrentValues.SetValues(enderecoModel);
+
+                }
+                else
+                {
+                    // Insere endereco
+                    var novoEndereco = new Endereco
+                    {
+                        Rua = enderecoModel.Rua,
+                        Numero = enderecoModel.Numero,
+                        Bairro = enderecoModel.Bairro,
+                        Cidade = enderecoModel.Cidade,
+                        Uf = enderecoModel.Uf,
+                        Cep = enderecoModel.Cep,
+                        Nome_Endereco = enderecoModel.Nome_Endereco,
+                        Create_Date = DateTime.Now,
+                        Update_Date = DateTime.Now,
+
+                    };
+                    buscaClienteERelacionamento.Enderecos.Add(novoEndereco);
+                }
+
+                //_context.SaveChanges();
+            }
+
+
+           // _context.SaveChanges();
 
         }
 
+        public async Task<bool> SaveAllAsync()
+        {
+            return await _context.SaveChangesAsync() > 0;
+
+        }
 
     }
 }
