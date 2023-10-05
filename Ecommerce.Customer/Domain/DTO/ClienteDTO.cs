@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.DTO
 {
-
+//teste
 
     public struct ClienteDTO
     {
