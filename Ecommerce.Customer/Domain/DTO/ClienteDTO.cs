@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Domain.DTO
 {
+
+
     public struct ClienteDTO
     {
         public int Id { get; set; }
